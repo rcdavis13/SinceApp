@@ -43,7 +43,7 @@ struct EditTaskView: View {
                     .padding(.vertical, 4)
                 }
 
-                Section(header: Text("Last Done Since")) {
+                Section(header: Text("Not Completed Since")) {
                     Text(task.lastDone, style: .date)
                         .foregroundColor(.secondary)
                     Text("\(task.daysSinceLastDone) day\(task.daysSinceLastDone == 1 ? "" : "s") ago")
